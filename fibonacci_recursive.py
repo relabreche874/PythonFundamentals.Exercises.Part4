@@ -8,7 +8,7 @@ def fibonacci(num) :
     else :
         return fibonacci(num - 1) + fibonacci(num - 2)
     
-
+print(fibonacci(7))
 print(fibonacci(5))
 print(fibonacci(3))
 print(fibonacci(33))
