@@ -1,4 +1,4 @@
-from random import randrange
+from random import randint
 
 def guess() :
     guess = int(input("Please enter a number between 0 and 10: "))
@@ -6,22 +6,22 @@ def guess() :
 
 
 def rando_num() :
-    rando = randrange(0,11)
+    rando = randint(0,11)
     return rando
     
 
 user_guess = guess()
 rando_mando = rando_num()
+count = 0
 
-while user_guess != rando_mando :
+while count < 1 :
     
     if user_guess > rando_mando :
-        print("Too High!")
-        user_guess = guess()
-    
+        user_guess = int(input("Too High! Please enter a number between 0 and 10: "))
+        
     elif user_guess < rando_mando :
-        print("Too Low!")
-        user_guess = guess()
-      
+        user_guess = int(input("Too Low! Please enter a number between 0 and 10: "))
+    
     if user_guess == rando_mando :
         print("Correct! You win!")
+        count = count + 1
