@@ -11,4 +11,4 @@ def fibonacci(num) :
 print(fibonacci(7))
 print(fibonacci(5))
 print(fibonacci(3))
-print(fibonacci(33))
+print(fibonacci(30))
